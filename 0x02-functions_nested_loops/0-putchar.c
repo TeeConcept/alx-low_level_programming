@@ -1,4 +1,6 @@
 #include <main.h>
+#include <0-putchar.c>
+
 int main(void)
 {
 	_putchar("_");
