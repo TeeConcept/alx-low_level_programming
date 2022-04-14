@@ -4,5 +4,4 @@
 #include <stdio.h>
 
 void zero_value(int i);
-
-#endif /* MAIN_H */
+#endif
