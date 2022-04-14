@@ -8,8 +8,6 @@ int main(void)
 {
 int i;
 i = 0;
-printf((int i); is zero);
-printf("\n");
-
+positive_or_negative(i);
 return (0);
 }	
