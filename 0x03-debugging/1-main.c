@@ -1,14 +1,14 @@
 #include <stdio.h>
 /**
- * main - infinite loop
- * Return: Always 0 (success)
- */
+* main - Infinite loop
+* Return: Always 0 (success)
+*/
 int main(void)
 {
 int i;
-printf("Infinite loop incoming :(");
+printf("Infinite loop incoming :(\n");
 i = 0;
-printf("Infinite loop avoided! \\o/");
+printf("Infinite loop avoided! \\o/\n");
 printf("\n");
 return (0);
 }
