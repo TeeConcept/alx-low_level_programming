@@ -9,9 +9,7 @@ int main(void)
 int i;
 
 i = 0;
-positive_or_negative(i);
-
-printf("\n");
+positive_or_negative(i, "\n");
 
 return (0);
 }	
