@@ -6,27 +6,18 @@
 
 int main(void)
 {
-unsigned long i, j, isPrime;
-num = 612852475143;
+unsigned long n, i, max;
+n = 612852475143;
+max = 1;
 
-for(i=2; i<=num; i++)
+for(i=3; i <= n; i +- 2)
 {
-if(num%i == 0)
+while (n % i == 0)
 {
-isPrime = 1;
-for(j=2; j <= i/2; j++)
-{
-if(i%j == 0)
-{
-isPrime = 0;
-break;
+max = n;
+n = n/i;
 }
 }
-if(isPrime==1)
-{
-printf("%d\n", i);
-}
-}
-}
-    return (0);
+printf("%lu\n", max);
+return (0);
 }
