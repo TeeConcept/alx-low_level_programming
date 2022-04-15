@@ -7,7 +7,6 @@
  */
 
 int main(void)
-print_number(int n)
 {
 	long m; /* power of 10 */
 	int c; /* boolean check */
