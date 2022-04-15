@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * ibidun_tosin - Check main
+ * jack_bauer - Check main
  * Description: function prints every minute in one day
  * Return: Nothing
  */
-void ibidun_tosin(void)
+void jack_bauer(void)
 {
 int H, M;
 
