@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>
 
 /**
  * main - Entry pont
@@ -8,17 +8,18 @@
 
 int main(void)
 {
-unsigned long n, i, max;
-n = 612852475143;
-max = 1;
-for(i=3; i <= n; i +- 2)
+long n, maxt;
+long number = 612852475143;
+double square = sqrt(number);
+
+for(n = 1; n <= square; n++)
 {
-while (n % i == 0)
+if (number % n == 0)
 {
-max = n;
-n = n/i;
+maxt = number / n;
 }
 }
-printf("%lu\n", max);
+printf("%ld\n", maxt);
+
 return (0);
 }
