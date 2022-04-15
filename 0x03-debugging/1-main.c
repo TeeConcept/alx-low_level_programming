@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - Infinite loop
  * Return: Always 0 (success)
