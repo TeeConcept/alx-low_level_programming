@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -18,5 +19,4 @@ else
 _putchar (i + '0');
 }
 }
-return (void);
 }
