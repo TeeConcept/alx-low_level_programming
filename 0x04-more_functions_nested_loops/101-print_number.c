@@ -1,7 +1,6 @@
 #include "main.h"
-
 /**
- * print_number - a function that prints an integer.
+ * print_number - A function that prints an integer.
  * @n: An input integer
  * Return: Nothing
  */
@@ -15,5 +14,5 @@ _putchar('-');
 print_integer(n * -1);
 }
 else
-print_integer(n);
+print_integer(n'\n');
 }
