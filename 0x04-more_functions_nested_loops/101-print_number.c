@@ -2,7 +2,6 @@
 #include <stdio.h>
 /**
  * print_number - A function that prints an integer.
- * @n: An input integer
  * Return: Nothing
  */
 void print_number(int n)
