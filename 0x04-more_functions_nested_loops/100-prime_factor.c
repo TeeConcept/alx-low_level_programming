@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include <stdlib.h>
+
 /**
  * main - Entry pont
  * Return: Always 0 (Success)
@@ -11,7 +11,6 @@ int main(void)
 long n, maxt;
 long number = 612852475143;
 double square = sqrt(number);
-
 for(n = 1; n <= square; n++)
 {
 if (number % n == 0)
