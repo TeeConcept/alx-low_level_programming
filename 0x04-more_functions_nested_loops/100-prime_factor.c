@@ -2,7 +2,7 @@
 #include <math.h>
 #include "main.h"
 /**
- * main - Entry pont
+ * main - Entry point
  * Return: Always 0 (Success)
  */
 
