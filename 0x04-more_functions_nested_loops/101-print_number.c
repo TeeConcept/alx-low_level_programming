@@ -8,10 +8,7 @@
 
 int main(void)
 {
-	long m; /* power of 10 */
-	int c; /* boolean check */
-	long num; /* convert int to long */
-
+	int num, m, c; /* boolean check */
 	num = n;
 	/* negatives */
 	if (num < 0)
