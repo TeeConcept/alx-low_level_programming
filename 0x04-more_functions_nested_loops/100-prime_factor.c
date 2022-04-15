@@ -1,24 +1,18 @@
 #include <stdio.h>
-#include <math.h>
-#include "main.h"
+
 /**
  * main - Entry point
- *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 int main(void)
 {
-long n, maxt;
-long number = 612852475143;
-double square = sqrt(number);
-for(n = 1; n <= square; n++)
-{
-if (number % n == 0)
-{
-maxt = number / n;
-}
-}
-printf("%ld\n", maxt);
+unsigned long int i = 3, n = 612852475143;
 
+for (; i < 12057; i += 2)
+{
+while (n % i == 0 && n != i)
+n /= i;
+}
+printf("%lu\n", n);
 return (0);
 }
