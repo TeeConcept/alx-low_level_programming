@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry pont
- * Return: int
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -9,7 +9,6 @@ int main(void)
 unsigned long n, i, max;
 n = 612852475143;
 max = 1;
-
 for(i=3; i <= n; i +- 2)
 {
 while (n % i == 0)
