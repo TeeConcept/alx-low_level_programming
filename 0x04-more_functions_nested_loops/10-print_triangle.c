@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * print_triangle - check the code for Holberton School students.
  *@size: variable
