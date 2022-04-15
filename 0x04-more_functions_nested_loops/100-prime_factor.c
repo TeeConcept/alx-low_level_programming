@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
+#include <stdlib.h>
 /**
  * main - Entry pont
  * Return: Always 0 (Success)
