@@ -18,4 +18,5 @@ else
 _putchar (i + '0');
 }
 }
+return (void);
 }
