@@ -1,15 +1,14 @@
 #include <stdio.h>
 /**
  * main - Entry pont
- * Return: Always 0 (Success)
+ * Return: int
  */
 
 int main(void)
 {
-int i, j, isPrime;
-long int num;
+unsigned long i, j, isPrime;
 num = 612852475143;
-printf("All Prime Factors of %ld are: \n", num);
+
 for(i=2; i<=num; i++)
 {
 if(num%i == 0)
@@ -25,7 +24,7 @@ break;
 }
 if(isPrime==1)
 {
-printf("%d ", i);
+printf("%d\n", i);
 }
 }
 }
