@@ -14,7 +14,7 @@ time_t t;
 srand((unsigned int) time(&t));
 while (c < 2772)
 {
-r = rand() % 128;
+r = srand() % 128;
 if ((c + r) > 2772)
 break;
 c = c + r;
