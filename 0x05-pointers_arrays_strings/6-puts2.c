@@ -17,7 +17,7 @@ a++;
 }
 
 while (b < a)
-{i
+{
 _putchar(str[b]);
 b += 2;
 }
