@@ -1,63 +1,51 @@
 #include <stdio.h>
-#include "main.h"
 #include <stdlib.h>
-#include <ctype.h>
-/**
-  *main - entry
-  *@argv : the string from the terminal
-  *@argc : the number of arameters
-  *Return: 0
-  */
 
-int main(int argc, char const *argv[])
+/**
+ * main - print the min number of coins to make change for an amount of money
+ * @argc: argument count
+ * @argv: argument vector, array of strings
+ * Return: 1 if error, 0 otherwise
+ */
+
+int main(int argc, char *argv[])
 {
+int total, count;
+unsigned int i;
+char *p;
+int cents[] = {25, 10, 5, 2};
+
 if (argc != 2)
 {
 printf("Error\n");
-return (-1);
+return (1);
 }
-if (atoi(argv[1]) >= 0)
+
+total = strtol(argv[1], &p, 10);
+count = 0;
+
+if (!*p)
 {
-int c = 0;
-checker(atoi(argv[1]), c);
-}
-else if (atoi(argv[1]) < 0)
+while (total > 1)
 {
-printf("0\n");
+for (i = 0; i < sizeof(cents[i]); i++)
+{
+if (total >= cents[i])
+{
+count += total / cents[i];
+total = total % cents[i];
 }
+}
+}
+if (total == 1)
+count++;
+}
+else
+{
+printf("Error\n");
+return (1);
+}
+
+printf("%d\n", count);
 return (0);
-}
-
-/**
-  * checker - entry function
-  *@c : variable
-  *@b : variable
-  */
-
-void checker(int c, int b)
-{
-if (c >= 25)
-{
-checker(c - 25, b + 1);
-}
-else if (c >= 10)
-{
-checker(c - 10, b + 1);
-}
-else if (c >= 5)
-{
-checker(c - 5, b + 1);
-}
-else if (c >= 2)
-{
-checker(c - 2, b + 1);
-}
-else if (c >= 1)
-{tom
-checker(c - 1, b + 1);
-}
-else if (c == 0)
-{
-printf("%d\n", b);
-}
 }
